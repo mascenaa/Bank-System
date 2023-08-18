@@ -5,7 +5,7 @@ public class BankAccount {
      private String name;
      private int agencia;
 
-     public void BankAccount(double saldo, String name, int agencia) {
+     public void createBankAccount(double saldo, String name, int agencia) {
           this.saldo = saldo;
           this.name = name;
           this.agencia = agencia;
@@ -20,7 +20,7 @@ public class BankAccount {
      }
 
      public void getSaldo() {
-          System.out.println("Seu saldo é de: " + this.saldo);
+          System.out.println(this.name + ", seu saldo é de: " + this.saldo);
      }
 
      public void getAgency() {
